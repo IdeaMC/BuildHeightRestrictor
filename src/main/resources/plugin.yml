@@ -1,0 +1,13 @@
+name: BuildHeightRestrictor
+version: '${project.version}'
+main: fun.xiantiao.buildheightrestrictor.BuildHeightRestrictor
+api-version: '1.13'
+authors: [ xiantiao ]
+commands:
+  buildheightrestrictor:
+    permission: buildheightrestrictor.reload
+    description: Shows buildheightrestrictor version and more.
+    aliases: bhr
+permissions:
+  buildheightrestrictor.reload:
+    default: op
