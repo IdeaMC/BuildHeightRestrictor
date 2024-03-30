@@ -18,11 +18,7 @@ import static fun.xiantiao.buildheightrestrictor.BuildHeightRestrictor.getInstan
 public class BHRCommand implements CommandExecutor, TabCompleter {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
-        if (!("bhr".equalsIgnoreCase(command.getName()) && "buildheightrestrictor".equalsIgnoreCase(command.getName()))) {
-            return false;
-        }
-
-        if (args.length == 1 && sender.hasPermission("buildheightrestrictor.bypass") || (sender.isOp() && getInstance().getConfig().getBoolean("op"))) {
+        if (args.length == 1 && (sender.hasPermission("buildheightrestrictor.bypass")) || (sender.isOp() && getInstance().getConfig().getBoolean("op"))) {
             if ("reload".equalsIgnoreCase(args[0])) {
                 getInstance().reloadConfig();
                 sender.sendMessage("reload ok!");

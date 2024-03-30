@@ -41,8 +41,7 @@ public final class BuildHeightRestrictor extends JavaPlugin implements Listener 
     public void onBlockPlace(BlockPlaceEvent event) {
         Player player = event.getPlayer();
 
-        if (player.isOp() && getConfig().getBoolean("op")) {return;}
-        if (player.hasPermission("buildheightrestrictor.bypass")) {return;}
+        if (player.isOp() || player.hasPermission("buildheightrestrictor.bypass")) {return;}
 
         if (event.getBlockPlaced().getY() > getConfig().getInt("Height")) {
             event.setBuild(false);
