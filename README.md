@@ -1,7 +1,7 @@
 # BuildHeightRestrictor
 
-建造高度限制 `1.13+`  
-支持`folia`
+建造高度限制 `全版本`  
+额外支持`folia` `CatServer` `Arclight`
 
 > 拥有 `buildheightrestrictor.bypass` 可以绕过限制  
 > `/bhr reload 重载配置文件`
