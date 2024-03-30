@@ -18,3 +18,5 @@ Message:
 # 限制的高度(256的意思是256还可以放置，高于就不行了)
 Height: 256
 ```
+
+[QQ交流群](https://qm.qq.com/q/60zH2wfPRS)

@@ -36,7 +36,6 @@ public final class BuildHeightRestrictor extends JavaPlugin implements Listener 
         new Metrics(this, 21462);
     }
 
-
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onBlockPlace(BlockPlaceEvent event) {
         Player player = event.getPlayer();
